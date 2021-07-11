@@ -27,7 +27,7 @@ const dots = document.querySelectorAll('.dot');
 let hoursPage = 1;
 
 // flags to keep track of last searched city, to re-use this info when changing units
-let unitReload = true;
+let unitReload = false;
 let lastCity = 'guwahati';
 
 // hide data labels until the data has loaded
@@ -40,7 +40,7 @@ async function getWeatherData(unit, initialLoad = false) {
     let cityName;
     // default weather location on initial load
     if (initialLoad) {
-      cityName = 'auckland';
+      cityName = 'guwahati';
     } else {
       // if not initial load, get relevent weather data
       cityName = apiFncs.getDataFromForm();
