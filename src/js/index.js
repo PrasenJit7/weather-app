@@ -15,7 +15,7 @@ let units = 'metric';
 // button that displays the 7 day forecast
 const dailyBtn = document.querySelector('.daily-btn');
 // button that displays the 24hr hourly forecast
-// const hourlyBtn = document.querySelector('.hourly-btn');
+const hourlyBtn = document.querySelector('.hourly-btn');
 // button that shifts to the previous hourly forecasts
 const changeHoursLeft = document.querySelector('.change-hours__left');
 // button that shifts to the next hourly forecasts
@@ -28,7 +28,7 @@ let hoursPage = 1;
 
 // flags to keep track of last searched city, to re-use this info when changing units
 let unitReload = false;
-let lastCity = 'guwahati';
+let lastCity = 'India';
 
 // hide data labels until the data has loaded
 document.querySelector('body').style.visibility = 'hidden';
@@ -40,7 +40,7 @@ async function getWeatherData(unit, initialLoad = false) {
     let cityName;
     // default weather location on initial load
     if (initialLoad) {
-      cityName = 'guwahati';
+      cityName = 'India';
     } else {
       // if not initial load, get relevent weather data
       cityName = apiFncs.getDataFromForm();
