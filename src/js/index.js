@@ -27,8 +27,8 @@ const dots = document.querySelectorAll('.dot');
 let hoursPage = 1;
 
 // flags to keep track of last searched city, to re-use this info when changing units
-let unitReload = false;
-let lastCity = 'auckland';
+let unitReload = true;
+let lastCity = 'guwahati';
 
 // hide data labels until the data has loaded
 document.querySelector('body').style.visibility = 'hidden';
