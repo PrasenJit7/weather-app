@@ -15,7 +15,7 @@ let units = 'metric';
 // button that displays the 7 day forecast
 const dailyBtn = document.querySelector('.daily-btn');
 // button that displays the 24hr hourly forecast
-const hourlyBtn = document.querySelector('.hourly-btn');
+// const hourlyBtn = document.querySelector('.hourly-btn');
 // button that shifts to the previous hourly forecasts
 const changeHoursLeft = document.querySelector('.change-hours__left');
 // button that shifts to the next hourly forecasts
